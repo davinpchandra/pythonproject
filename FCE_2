@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Nov 25 11:52:12 2019
+
+@author: davinpc
+"""
+
+#2
+def max_of_three(x,y,z):
+    if x > y and x > z:
+        print(x)
+        return x
+    if y > x and y > z:
+        print(y)
+        return y
+    if z > x and z > y:
+        print(z)
+        return z
+    
+max_of_three(5,1,2)
