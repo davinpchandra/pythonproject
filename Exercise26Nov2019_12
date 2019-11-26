@@ -1,0 +1,18 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Nov 26 10:57:23 2019
+
+@author: davinpc
+"""
+#12
+rot13 = str.maketrans( 
+    "ABCDEFGHIJKLMabcdefghijklmNOPQRSTUVWXYZnopqrstuvwxyz", 
+    "NOPQRSTUVWXYZnopqrstuvwxyzABCDEFGHIJKLMabcdefghijklm")
+def rot_13(var):
+    print(str.translate(var, rot13))
+    
+rot_13("hello")
+
+        
+    

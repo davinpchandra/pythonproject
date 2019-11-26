@@ -1,0 +1,19 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Nov 26 10:02:43 2019
+
+@author: davinpc
+"""
+#4
+test_list = [0,1,2,3,4,5]
+
+def is_member(val):
+    for i in test_list:  
+        if i == val : 
+            print("True") 
+        else:
+            print("False")
+  
+is_member(2)
+is_member(7)

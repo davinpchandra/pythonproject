@@ -1,0 +1,14 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Nov 26 10:24:34 2019
+
+@author: davinpc
+"""
+#7
+def change_to_int(lst):
+    for i in lst:
+        length = len(i)
+        print(length)
+        
+change_to_int(["string","hello"])
