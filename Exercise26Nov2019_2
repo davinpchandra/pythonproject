@@ -1,0 +1,23 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Nov 27 11:20:41 2019
+
+@author: davinpc
+"""
+vowels = ['a','o','i','e','u',' ']
+text = 'this is fun'
+
+def translate(text):
+    sentence = ' '
+    for vowel in text:
+        if vowel in vowels:
+            sentence = sentence + vowel
+        else:
+            sentence = sentence + vowel + 'o' + vowel
+    print(sentence)
+    
+translate(text)
+    
+
+ 

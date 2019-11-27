@@ -1,0 +1,19 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Nov 27 11:39:54 2019
+
+@author: davinpc
+"""
+
+def overlapping(lst1,lst2):
+    for i in lst1:
+        for j in lst2:
+            if i == j:
+                return True
+    return False
+
+lst1 = ['a','b','c','d']
+lst2 = ['aa','bb','cc','d']
+
+print(overlapping(lst1,lst2))

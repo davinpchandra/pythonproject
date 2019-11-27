@@ -1,0 +1,20 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Nov 27 11:45:01 2019
+
+@author: davinpc
+"""
+
+def filter_long_words(lwords, n):
+    newlist = []
+    for word in lwords:
+        if len(word) > n:
+            newlist.append(word)
+        else:
+            print('')
+    print(newlist)
+        
+lwords = ["hello","hi","world"]
+        
+filter_long_words(lwords, 4)

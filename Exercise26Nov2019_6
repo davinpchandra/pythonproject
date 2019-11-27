@@ -10,4 +10,4 @@ def histogram(lst):
     for num in lst:
         print(num*"*")
         
-histogram([2,7,5])
+histogram([4, 9, 7])

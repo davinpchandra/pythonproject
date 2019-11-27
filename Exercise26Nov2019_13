@@ -1,0 +1,43 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Nov 27 12:06:33 2019
+
+@author: davinpc
+"""
+
+
+
+def makeForms(verb):
+    if verb[-1] == 'y':
+        a = verb[-1].replace('y','ies')
+        b = verb.replace(verb[-1],'')
+        print(b + a)
+    elif verb[-1] == 'o':
+        c = verb.replace(verb[-1],'')
+        d = verb[-1].replace('o','oes')
+        print(c + d)
+    elif verb[-1] == 'h' and verb[-2] == 'c':
+        e = verb + 'es'
+        print(e)
+    elif verb[-1] == 's':
+        f = verb + 'es'
+        print(f)
+    elif verb[-1] == 'h' and verb[-2] == 's':
+        g = verb + 'es'
+        print(g)
+    elif verb[-1] == 'x':
+        h = verb + 'es'
+        print(h)
+    elif verb[-1] == 'z':
+        i = verb + 'es'
+        print(i)
+    else:
+        print(verb + 's')
+        
+makeForms('try')
+makeForms('go')
+makeForms('teach')
+makeForms('brush')
+makeForms('run')
+makeForms('fix')

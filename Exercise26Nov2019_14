@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Nov 27 13:25:34 2019
+
+@author: davinpc
+"""
+
+def makeParticiple(verb):
+    if verb[-1] == 'e' and verb[-2] == 'i':
+        a = verb.replace('ie','ying')
+        print(a)
+    elif verb[-1] == 'e' and verb[-2] == 'e':
+        b = verb + 'ing'
+        print(b)
+    elif verb[-1] == 'e':
+        c = verb.replace('e','ing')
+        print(c)
+    elif verb[-1] in 'bcdfghjklmnpqrstvwxyz' and verb[-2] in 'aieou' and verb[-3] in 'bcdfghjklmnpqrstvwxyz':
+        d = verb + verb[-1] + 'ing'
+        print(d)
+    else:
+        print(verb + 'ing')
+        
+makeParticiple('lie')
+makeParticiple('see')
+makeParticiple('move')
+makeParticiple('hug')
+    
